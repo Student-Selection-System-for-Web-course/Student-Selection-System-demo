@@ -68,16 +68,16 @@
 								<li>
 									<a href="adminInfo.html" class="active-menu"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">管理员信息</span></a>
 								</li>
-								<li>
+								<li >
 									<a href="teacherInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">教师信息</span></a>
 								</li>
-								<li>
+								<li v-if="user.level===1">
 									<a href="studentInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">学生信息</span></a>
 								</li>
-								<li>
+								<li v-if="user.level===1">
 									<a href="xueyuanInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">学院信息</span></a>
 								</li>
-								<li>
+								<li  v-if="user.level===1">
 									<a href="zhuanyeInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">专业信息</span></a>
 								</li>
 								<li>
