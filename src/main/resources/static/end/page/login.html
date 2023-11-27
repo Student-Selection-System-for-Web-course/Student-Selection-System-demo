@@ -22,7 +22,7 @@
 <div id="app" class="container" v-cloak>
     <div class="row text-center " style="padding-top:120px;">
         <div class="col-md-12">
-           <h2 style="color: white">欢迎登录学生选课管理系统</h2>
+            <h2 style="color: white">欢迎登录学生选课管理系统</h2>
         </div>
     </div>
     <div class="row ">
@@ -31,6 +31,34 @@
 
             <div class="panel-body">
                 <form role="form">
+                    <hr/>
+                    <br/>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-tag"></i></span>
+                        <input type="text" class="form-control"  v-model="user.name" placeholder="用户名"/>
+                    </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control"  v-model="user.password" placeholder=" 密码"/>
+                    </div>
+                    <h5 style="color: white">请选择角色</h5>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <select class="form-control" v-model="user.level">
+                            <option value="" selected="">请选择</option>
+                            <option value="1">管理员</option>
+                            <option value="2">教师</option>
+                            <option value="3">学生</option>
+                        </select>
+                    </div>
+
+                    <div style="text-align: center">
+                        <a href="javascript:void(0)" @click="login" class="btn btn-primary" >登录</a>
+                    </div>
+                    <hr/>
+                    <div style="text-align: center">
+                        <span style="color: white">未注册 ?</span> <a href="register.html" style="color: yellow">点击这里 </a>
+                    </div>
 
                 </form>
             </div>
@@ -53,6 +81,30 @@
 
         },
         methods: {
+            login(){
+                axios.post("/login",this.user).then(res=>{//进行后台调用，调用后台login接口，然后then用来接收
+                    if(res.data.code ==='0') {//说明登录成功了
+                        let user = res.data.data;
+                        localStorage.setItem('user', JSON.stringify(user));//将缓存存一下
+                        //进行跳转到信息面,判断用户是什么角色
+                        if (user && user.level) {
+                            if (user.level === 1) {
+                                //跳转
+                                window.location = "/end/page/accountAdminInfo.html";
+                            }
+                            if (user.level === 2) {
+                                window.location = "/end/page/accountTeacher.html";
+                            }
+                            if (user.level === 3) {
+                                window.location = "/end/page/accountStudentInfo.html";
+                            }
+                        }
+                    }else{//弹出提示框
+                        alert(res.data.msg);
+                    }
+
+                })
+            }
         }
     });
 </script>
