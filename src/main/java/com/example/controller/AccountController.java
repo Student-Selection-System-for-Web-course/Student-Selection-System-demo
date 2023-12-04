@@ -4,8 +4,13 @@ import cn.hutool.core.util.ObjectUtil;
 import com.example.common.Result;
 import com.example.entity.Account;
 import com.example.entity.AdminInfo;
+import com.example.entity.StudentInfo;
 import com.example.service.AdminInfoService;
+import com.example.service.StudentInfoService;
+import org.springframework.beans.BeanUtils;
+import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.support.HttpRequestHandlerServlet;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -13,63 +18,80 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 @RequestMapping
 public class AccountController {
+    @Resource
+    AdminInfoService adminInfoService;
+    @Resource
+    StudentInfoService studentInfoService;
 
-	//引入Service层
-	@Resource
-	AdminInfoService adminInfoService;
+    @PostMapping("/login")
+    public Result login(@RequestBody Account user, HttpServletRequest request) {
+        if (ObjectUtils.isEmpty(user.getLevel()) || ObjectUtils.isEmpty(user.getName()) || ObjectUtils.isEmpty(user.getPassword()))
+            return Result.error("-1", "填的不全");
+        Integer level = user.getLevel();
 
-	@PostMapping("/login")
-	//Result是自己定义的一个统一返回给前端的数据结构
-	public Result login(@RequestBody Account user, HttpServletRequest request){
+        Account loginUser = new Account();
 
-		//校验数据有没有填
-		//判断是否为空，存在为空的情况下
-		if(ObjectUtil.isEmpty(user.getName()) || ObjectUtil.isEmpty(user.getPassword()) || ObjectUtil.isEmpty(user.getLevel())){
-			return Result.error("-1","请完善输入信息");
-		}
+        if (level == 1) {
+            //管理员登录
+            loginUser = adminInfoService.login(user.getName(), user.getPassword());
+        }
 
-		//不为空时，进行登录
-		Integer level = user.getLevel();//获取level
-		Account loginUser=new Account();//定义一个Account类用来接收
+        if (level == 2) {
+            //教师登录
+        }
 
-		if(1==level){
-			//管理员登录
-			loginUser= adminInfoService.login(user.getName(), user.getPassword());
+        if (level == 3) {
+            //学生登录
+            loginUser = studentInfoService.login(user.getName() ,user.getPassword());
+        }
 
-		}
-		if(2==level){
-			//教师登录
-		}
-		if(3==level){
-			//学生登录
-		}
+        request.getSession().setAttribute("user",loginUser);
+        return Result.success(loginUser);
+    }
 
-		//在session里面把用户信息存一遍
-		request.getSession().setAttribute("user",loginUser);
+    @PostMapping("/register")
+    public Result register(@RequestBody Account user, HttpServletRequest request){
+        if(ObjectUtil.isEmpty(user.getName()) || ObjectUtil.isEmpty(user.getPassword()) || ObjectUtil.isEmpty(user.getLevel())){
+            return Result.error("-1","请输入完整信息");
+        }
 
-		return Result.success(loginUser);
-	}
+        Integer level = user.getLevel();
+        //学生注册
+        if(level == 3){
+            StudentInfo studentInfo = new StudentInfo();
+            BeanUtils.copyProperties(user,studentInfo);
+            studentInfoService.register(studentInfo);
+        }
+        return Result.success();
+    }
 
-	@GetMapping("/getUser")//表示一个get请求
-	public Result getUser(HttpServletRequest request){
-		//先从session里获取当前所存的已登录的用户信息
-		Account user = (Account)request.getSession().getAttribute("user");
-		//判断当前用户为什么角色
-		Integer level = user.getLevel();
-		if(1==level){
-			//获取管理员信息
-			AdminInfo adminInfo= (AdminInfo) adminInfoService.findById(user.getId());
-			return Result.success(adminInfo);
+    @GetMapping("/getUser")
+    public Result getUser(HttpServletRequest request){
+        //先从session里面获取当前存的登录用户信息
+        Account user = (Account) request.getSession().getAttribute("user");
+        //判断用户角色
+        Integer level = user.getLevel();
+        if (level == 1) {
+            //获取管理员信息
+            AdminInfo adminInfo = adminInfoService.findById(user.getId());
+            return Result.success(adminInfo);
+        }
 
-		}
-		if(2==level){
-			//获取教师信息
-		}
-		if(3==level){
-			//获取学生信息
-		}
-		return Result.success(new Account());
+        if (level == 2) {
+            //获取教师信息
+        }
 
-	}
+        if (level == 3) {
+            //获取学生信息
+            StudentInfo studentInfo = studentInfoService.findById(user.getId());
+            return Result.success(studentInfo);
+        }
+        return Result.success(new Account());
+    }
 
+    @GetMapping("/logout")
+    public Result logout(HttpServletRequest request){
+        request.getSession().setAttribute("user",null);
+        return Result.success();
+    }
 }

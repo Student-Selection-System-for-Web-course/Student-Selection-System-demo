@@ -1,8 +1,8 @@
-# 默认忽略的文件
+# Default ignored files
 /shelf/
 /workspace.xml
-# 基于编辑器的 HTTP 客户端请求
-/httpRequests/
 # Datasource local storage ignored files
-/dataSources/
+/../../../../../../../../:\Users\Lenovo\Desktop\0001-学生选课管理系统\基础脚手架\bs_xsxk\.idea/dataSources/
 /dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

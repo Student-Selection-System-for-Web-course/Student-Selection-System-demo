@@ -1,13 +1,9 @@
 package com.example.entity;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Table(name="xueyuan_info")
+@Table(name = "xueyuan_info")
 public class XueyuanInfo {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
