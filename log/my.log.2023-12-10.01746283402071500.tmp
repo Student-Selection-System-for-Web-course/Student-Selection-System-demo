@@ -1,0 +1,1008 @@
+2023-12-10 20:29:06.861  INFO 20908 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 20908 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 20:29:06.865  INFO 20908 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 20:29:07.379  WARN 20908 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 20:29:07.898  INFO 20908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 20:29:07.915  INFO 20908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 20:29:07.917  INFO 20908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 20:29:07.925  INFO 20908 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 20:29:08.006  INFO 20908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 20:29:08.007  INFO 20908 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1092 ms
+2023-12-10 20:29:08.024  INFO 20908 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 20:29:08.027  INFO 20908 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 20:29:08.028  INFO 20908 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 20:29:08.028  INFO 20908 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 20:29:08.028  INFO 20908 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 20:29:08.268  WARN 20908 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:29:08.339  WARN 20908 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:29:08.495  INFO 20908 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:29:08.756  INFO 20908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 20:29:08.758  INFO 20908 --- [main] com.example.Application                  : Started Application in 2.245 seconds (JVM running for 3.186)
+2023-12-10 20:29:08.760  INFO 20908 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 20:29:11.102  INFO 20908 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 20:29:11.103  INFO 20908 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 20:29:11.108  INFO 20908 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-10 20:29:29.703  INFO 20908 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:30:32.042  INFO 25528 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 25528 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 20:30:32.047  INFO 25528 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 20:30:32.636  WARN 25528 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 20:30:33.260  INFO 25528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 20:30:33.281  INFO 25528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 20:30:33.281  INFO 25528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 20:30:33.290  INFO 25528 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 20:30:33.381  INFO 25528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 20:30:33.381  INFO 25528 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1271 ms
+2023-12-10 20:30:33.401  INFO 25528 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 20:30:33.404  INFO 25528 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 20:30:33.404  INFO 25528 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 20:30:33.404  INFO 25528 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 20:30:33.404  INFO 25528 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 20:30:33.593  WARN 25528 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:30:33.681  WARN 25528 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:30:33.849  INFO 25528 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:30:34.080  INFO 25528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 20:30:34.082  INFO 25528 --- [main] com.example.Application                  : Started Application in 2.435 seconds (JVM running for 3.149)
+2023-12-10 20:30:34.084  INFO 25528 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 20:30:36.323  INFO 25528 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 20:30:36.323  INFO 25528 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 20:30:36.327  INFO 25528 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-12-10 20:30:46.871  INFO 25528 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:34:23.711  INFO 16660 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 16660 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 20:34:23.714  INFO 16660 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 20:34:24.206  WARN 16660 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 20:34:24.681  INFO 16660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 20:34:24.696  INFO 16660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 20:34:24.696  INFO 16660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 20:34:24.704  INFO 16660 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 20:34:24.783  INFO 16660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 20:34:24.783  INFO 16660 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1022 ms
+2023-12-10 20:34:24.801  INFO 16660 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 20:34:24.804  INFO 16660 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 20:34:24.804  INFO 16660 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 20:34:24.804  INFO 16660 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 20:34:24.804  INFO 16660 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 20:34:24.997  WARN 16660 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:34:25.075  WARN 16660 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:34:25.232  INFO 16660 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:34:25.482  INFO 16660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 20:34:25.485  INFO 16660 --- [main] com.example.Application                  : Started Application in 2.124 seconds (JVM running for 2.721)
+2023-12-10 20:34:25.487  INFO 16660 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 20:34:31.152  INFO 16660 --- [http-nio-8888-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 20:34:31.152  INFO 16660 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 20:34:31.156  INFO 16660 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-12-10 20:34:47.501  INFO 16660 --- [http-nio-8888-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 20:34:48.680 ERROR 16660 --- [http-nio-8888-exec-7] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108) ~[pagehelper-5.1.8.jar:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.4.6.jar:3.4.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy98.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77) ~[mybatis-3.4.6.jar:3.4.6]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at jdk.proxy2/jdk.proxy2.$Proxy71.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy76.findByNameAndPass(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at jdk.proxy2/jdk.proxy2.$Proxy78.findByNameAndPass(Unknown Source) ~[na:na]
+	at com.example.service.AdminInfoService.login(AdminInfoService.java:26) ~[classes/:na]
+	at com.example.controller.AccountController.login(AccountController.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2023-12-10 20:34:48.688 ERROR 16660 --- [http-nio-8888-exec-7] c.e.exception.GlobalExceptionHandler     : 异常信息：
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in com/example/dao/AdminInfoDao.java (best guess)
+### The error may involve com.example.dao.AdminInfoDao.findByNameAndPass
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at jdk.proxy2/jdk.proxy2.$Proxy71.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy76.findByNameAndPass(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at jdk.proxy2/jdk.proxy2.$Proxy78.findByNameAndPass(Unknown Source) ~[na:na]
+	at com.example.service.AdminInfoService.login(AdminInfoService.java:26) ~[classes/:na]
+	at com.example.controller.AccountController.login(AccountController.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in com/example/dao/AdminInfoDao.java (best guess)
+### The error may involve com.example.dao.AdminInfoDao.findByNameAndPass
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77) ~[mybatis-3.4.6.jar:3.4.6]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	... 68 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108) ~[pagehelper-5.1.8.jar:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.4.6.jar:3.4.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy98.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.6.jar:3.4.6]
+	... 73 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	... 85 common frames omitted
+
+2023-12-10 20:35:03.408  INFO 16660 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:36:21.319  INFO 42960 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 42960 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 20:36:21.322  INFO 42960 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 20:36:21.811  WARN 42960 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 20:36:22.292  INFO 42960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 20:36:22.310  INFO 42960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 20:36:22.311  INFO 42960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 20:36:22.318  INFO 42960 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 20:36:22.392  INFO 42960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 20:36:22.393  INFO 42960 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1018 ms
+2023-12-10 20:36:22.412  INFO 42960 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 20:36:22.415  INFO 42960 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 20:36:22.415  INFO 42960 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 20:36:22.415  INFO 42960 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 20:36:22.415  INFO 42960 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 20:36:22.602  WARN 42960 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:36:22.698  WARN 42960 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:36:22.855  INFO 42960 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:36:23.089  INFO 42960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 20:36:23.091  INFO 42960 --- [main] com.example.Application                  : Started Application in 2.187 seconds (JVM running for 2.833)
+2023-12-10 20:36:23.094  INFO 42960 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 20:36:24.822  INFO 42960 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 20:36:24.822  INFO 42960 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 20:36:24.826  INFO 42960 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-12-10 20:36:36.303  INFO 42960 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:36:50.365  INFO 29472 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 29472 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 20:36:50.368  INFO 29472 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 20:36:50.819  WARN 29472 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 20:36:51.300  INFO 29472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 20:36:51.318  INFO 29472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 20:36:51.318  INFO 29472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 20:36:51.325  INFO 29472 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 20:36:51.399  INFO 29472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 20:36:51.399  INFO 29472 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 990 ms
+2023-12-10 20:36:51.421  INFO 29472 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 20:36:51.423  INFO 29472 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 20:36:51.424  INFO 29472 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 20:36:51.424  INFO 29472 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 20:36:51.424  INFO 29472 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 20:36:51.606  WARN 29472 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:36:51.677  WARN 29472 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:36:51.840  INFO 29472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:36:52.089  INFO 29472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 20:36:52.092  INFO 29472 --- [main] com.example.Application                  : Started Application in 2.078 seconds (JVM running for 2.817)
+2023-12-10 20:36:52.094  INFO 29472 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 20:36:57.703  INFO 29472 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 20:36:57.704  INFO 29472 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 20:36:57.709  INFO 29472 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-10 20:37:09.590  INFO 29472 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:38:05.656  INFO 31404 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 31404 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 20:38:05.659  INFO 31404 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 20:38:06.160  WARN 31404 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 20:38:06.646  INFO 31404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 20:38:06.665  INFO 31404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 20:38:06.665  INFO 31404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 20:38:06.673  INFO 31404 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 20:38:06.752  INFO 31404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 20:38:06.752  INFO 31404 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1049 ms
+2023-12-10 20:38:06.772  INFO 31404 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 20:38:06.775  INFO 31404 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 20:38:06.775  INFO 31404 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 20:38:06.775  INFO 31404 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 20:38:06.775  INFO 31404 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 20:38:06.955  WARN 31404 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:38:07.027  WARN 31404 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:38:07.192  INFO 31404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:38:07.487  INFO 31404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 20:38:07.489  INFO 31404 --- [main] com.example.Application                  : Started Application in 2.222 seconds (JVM running for 3.018)
+2023-12-10 20:38:07.491  INFO 31404 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 20:38:11.025  INFO 31404 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 20:38:11.026  INFO 31404 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 20:38:11.031  INFO 31404 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-10 20:38:16.064  INFO 31404 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:40:16.164  INFO 28024 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 28024 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 20:40:16.166  INFO 28024 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 20:40:16.626  WARN 28024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 20:40:17.102  INFO 28024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 20:40:17.119  INFO 28024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 20:40:17.119  INFO 28024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 20:40:17.126  INFO 28024 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 20:40:17.201  INFO 28024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 20:40:17.202  INFO 28024 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 996 ms
+2023-12-10 20:40:17.220  INFO 28024 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 20:40:17.222  INFO 28024 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 20:40:17.223  INFO 28024 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 20:40:17.223  INFO 28024 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 20:40:17.223  INFO 28024 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 20:40:17.418  WARN 28024 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:40:17.489  WARN 28024 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 20:40:17.649  INFO 28024 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 20:40:17.892  INFO 28024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 20:40:17.894  INFO 28024 --- [main] com.example.Application                  : Started Application in 2.042 seconds (JVM running for 2.767)
+2023-12-10 20:40:17.896  INFO 28024 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 20:40:21.041  INFO 28024 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 20:40:21.041  INFO 28024 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 20:40:21.046  INFO 28024 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-10 20:40:59.139  INFO 28024 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:12:20.084  INFO 32404 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 32404 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:12:20.090  INFO 32404 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:12:21.174  WARN 32404 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:12:21.807  INFO 32404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:12:21.821  INFO 32404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:12:21.822  INFO 32404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:12:21.828  INFO 32404 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:12:21.912  INFO 32404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:12:21.913  INFO 32404 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1726 ms
+2023-12-10 21:12:21.931  INFO 32404 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:12:21.934  INFO 32404 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:12:21.934  INFO 32404 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:12:21.934  INFO 32404 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:12:21.934  INFO 32404 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:12:22.126  WARN 32404 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:12:22.202  WARN 32404 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:12:22.357  INFO 32404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:12:22.614  INFO 32404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:12:22.616  INFO 32404 --- [main] com.example.Application                  : Started Application in 3.351 seconds (JVM running for 4.191)
+2023-12-10 21:12:22.620  INFO 32404 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:12:28.910  INFO 32404 --- [http-nio-8888-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:12:28.911  INFO 32404 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:12:28.920  INFO 32404 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-12-10 21:13:19.529  INFO 32404 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:13:37.278  INFO 10708 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 10708 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:13:37.281  INFO 10708 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:13:37.730  WARN 10708 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:13:38.288  INFO 10708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:13:38.308  INFO 10708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:13:38.309  INFO 10708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:13:38.319  INFO 10708 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:13:38.405  INFO 10708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:13:38.405  INFO 10708 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1090 ms
+2023-12-10 21:13:38.425  INFO 10708 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:13:38.429  INFO 10708 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:13:38.429  INFO 10708 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:13:38.429  INFO 10708 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:13:38.429  INFO 10708 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:13:38.672  WARN 10708 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:13:38.779  WARN 10708 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:13:38.972  INFO 10708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:13:39.255  INFO 10708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:13:39.258  INFO 10708 --- [main] com.example.Application                  : Started Application in 2.328 seconds (JVM running for 3.748)
+2023-12-10 21:13:39.261  INFO 10708 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:15:50.890  INFO 10708 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:15:53.813  INFO 27632 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 27632 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:15:53.818  INFO 27632 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:15:54.387  WARN 27632 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:15:54.962  INFO 27632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:15:54.979  INFO 27632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:15:54.980  INFO 27632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:15:54.989  INFO 27632 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:15:55.071  INFO 27632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:15:55.071  INFO 27632 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1207 ms
+2023-12-10 21:15:55.092  INFO 27632 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:15:55.095  INFO 27632 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:15:55.095  INFO 27632 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:15:55.096  INFO 27632 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:15:55.096  INFO 27632 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:15:55.325  WARN 27632 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:15:55.416  WARN 27632 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:15:55.607  INFO 27632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:15:55.878  INFO 27632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:15:55.881  INFO 27632 --- [main] com.example.Application                  : Started Application in 2.52 seconds (JVM running for 3.656)
+2023-12-10 21:15:55.883  INFO 27632 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:15:55.921  INFO 27632 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:15:55.921  INFO 27632 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:15:55.927  INFO 27632 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-12-10 21:16:16.590  INFO 27632 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 21:16:17.750 ERROR 27632 --- [http-nio-8888-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108) ~[pagehelper-5.1.8.jar:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.4.6.jar:3.4.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy98.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77) ~[mybatis-3.4.6.jar:3.4.6]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at jdk.proxy2/jdk.proxy2.$Proxy71.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy79.findByName(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at jdk.proxy2/jdk.proxy2.$Proxy80.findByName(Unknown Source) ~[na:na]
+	at com.example.service.TeacherInfoService.register(TeacherInfoService.java:24) ~[classes/:na]
+	at com.example.controller.AccountController.register(AccountController.java:72) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2023-12-10 21:16:17.759 ERROR 27632 --- [http-nio-8888-exec-4] c.e.exception.GlobalExceptionHandler     : 异常信息：
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in com/example/dao/TeacherInfoDao.java (best guess)
+### The error may involve com.example.dao.TeacherInfoDao.findByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at jdk.proxy2/jdk.proxy2.$Proxy71.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy79.findByName(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at jdk.proxy2/jdk.proxy2.$Proxy80.findByName(Unknown Source) ~[na:na]
+	at com.example.service.TeacherInfoService.register(TeacherInfoService.java:24) ~[classes/:na]
+	at com.example.controller.AccountController.register(AccountController.java:72) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in com/example/dao/TeacherInfoDao.java (best guess)
+### The error may involve com.example.dao.TeacherInfoDao.findByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77) ~[mybatis-3.4.6.jar:3.4.6]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	... 68 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108) ~[pagehelper-5.1.8.jar:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.4.6.jar:3.4.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy98.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.6.jar:3.4.6]
+	... 73 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	... 85 common frames omitted
+
+2023-12-10 21:20:50.636  INFO 27632 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:21:59.473  INFO 13568 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 13568 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:21:59.476  INFO 13568 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:21:59.981  WARN 13568 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:22:00.479  INFO 13568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:22:00.496  INFO 13568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:22:00.496  INFO 13568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:22:00.504  INFO 13568 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:22:00.582  INFO 13568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:22:00.583  INFO 13568 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1065 ms
+2023-12-10 21:22:00.601  INFO 13568 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:22:00.605  INFO 13568 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:22:00.606  INFO 13568 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:22:00.606  INFO 13568 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:22:00.607  INFO 13568 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:22:00.811  WARN 13568 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:22:00.885  WARN 13568 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:22:01.097  INFO 13568 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:22:01.358  INFO 13568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:22:01.360  INFO 13568 --- [main] com.example.Application                  : Started Application in 2.284 seconds (JVM running for 3.033)
+2023-12-10 21:22:01.362  INFO 13568 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:22:03.989  INFO 13568 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:22:03.989  INFO 13568 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:22:03.994  INFO 13568 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-10 21:22:12.045  INFO 13568 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 21:22:12.142  INFO 13568 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 21:22:26.054  INFO 13568 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:22:26.056  INFO 13568 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 21:22:26.106  INFO 13568 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 21:22:31.367  INFO 15132 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 15132 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:22:31.369  INFO 15132 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:22:31.839  WARN 15132 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:22:32.354  INFO 15132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:22:32.370  INFO 15132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:22:32.370  INFO 15132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:22:32.377  INFO 15132 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:22:32.457  INFO 15132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:22:32.457  INFO 15132 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1047 ms
+2023-12-10 21:22:32.475  INFO 15132 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:22:32.477  INFO 15132 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:22:32.478  INFO 15132 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:22:32.478  INFO 15132 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:22:32.478  INFO 15132 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:22:32.664  WARN 15132 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:22:32.741  WARN 15132 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:22:32.901  INFO 15132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:22:33.149  INFO 15132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:22:33.152  INFO 15132 --- [main] com.example.Application                  : Started Application in 2.107 seconds (JVM running for 2.719)
+2023-12-10 21:22:33.155  INFO 15132 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:22:36.306  INFO 15132 --- [http-nio-8888-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:22:36.307  INFO 15132 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:22:36.312  INFO 15132 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-10 21:22:48.034  INFO 15132 --- [http-nio-8888-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 21:22:48.137  INFO 15132 --- [http-nio-8888-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 21:24:10.015  INFO 15132 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:24:10.016  INFO 15132 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 21:24:10.019  INFO 15132 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 21:38:36.007  INFO 14940 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 14940 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:38:36.011  INFO 14940 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:38:36.464  WARN 14940 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:38:36.998  INFO 14940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:38:37.015  INFO 14940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:38:37.016  INFO 14940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:38:37.025  INFO 14940 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:38:37.121  INFO 14940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:38:37.122  INFO 14940 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1060 ms
+2023-12-10 21:38:37.141  INFO 14940 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:38:37.144  INFO 14940 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:38:37.144  INFO 14940 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:38:37.145  INFO 14940 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:38:37.145  INFO 14940 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:38:37.351  WARN 14940 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:38:37.423  WARN 14940 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:38:37.581  INFO 14940 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:38:37.831  INFO 14940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:38:37.833  INFO 14940 --- [main] com.example.Application                  : Started Application in 2.193 seconds (JVM running for 2.892)
+2023-12-10 21:38:37.836  INFO 14940 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:38:49.774  INFO 14940 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:38:49.774  INFO 14940 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:38:49.779  INFO 14940 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-10 21:38:49.872  INFO 14940 --- [http-nio-8888-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 21:38:49.968  INFO 14940 --- [http-nio-8888-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 21:39:21.457  INFO 14940 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:39:21.458  INFO 14940 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 21:39:21.461  INFO 14940 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 21:39:25.966  INFO 18732 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 18732 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:39:25.969  INFO 18732 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:39:26.592  WARN 18732 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:39:27.058  INFO 18732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:39:27.074  INFO 18732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:39:27.074  INFO 18732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:39:27.081  INFO 18732 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:39:27.158  INFO 18732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:39:27.159  INFO 18732 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1154 ms
+2023-12-10 21:39:27.179  INFO 18732 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:39:27.182  INFO 18732 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:39:27.182  INFO 18732 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:39:27.182  INFO 18732 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:39:27.182  INFO 18732 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:39:27.363  WARN 18732 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:39:27.434  WARN 18732 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:39:27.588  INFO 18732 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:39:27.819  INFO 18732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:39:27.821  INFO 18732 --- [main] com.example.Application                  : Started Application in 2.177 seconds (JVM running for 2.785)
+2023-12-10 21:39:27.824  INFO 18732 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:39:30.630  INFO 18732 --- [http-nio-8888-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:39:30.630  INFO 18732 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:39:30.635  INFO 18732 --- [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-10 21:39:41.385  INFO 18732 --- [http-nio-8888-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 21:39:41.480  INFO 18732 --- [http-nio-8888-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 21:40:26.698  INFO 18732 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:40:26.699  INFO 18732 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 21:40:26.703  INFO 18732 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 21:40:30.526  INFO 35216 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 35216 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:40:30.531  INFO 35216 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:40:31.053  WARN 35216 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:40:31.558  INFO 35216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:40:31.576  INFO 35216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:40:31.576  INFO 35216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:40:31.583  INFO 35216 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:40:31.669  INFO 35216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:40:31.669  INFO 35216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1086 ms
+2023-12-10 21:40:31.691  INFO 35216 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:40:31.694  INFO 35216 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:40:31.695  INFO 35216 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:40:31.695  INFO 35216 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:40:31.695  INFO 35216 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:40:31.878  WARN 35216 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:40:31.953  WARN 35216 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:40:32.109  INFO 35216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:40:32.351  INFO 35216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:40:32.353  INFO 35216 --- [main] com.example.Application                  : Started Application in 2.252 seconds (JVM running for 2.949)
+2023-12-10 21:40:32.356  INFO 35216 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:40:42.866  INFO 35216 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:40:42.866  INFO 35216 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:40:42.871  INFO 35216 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-12-10 21:40:42.958  INFO 35216 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 21:40:43.052  INFO 35216 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 21:40:53.195  INFO 35216 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:40:53.197  INFO 35216 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 21:40:53.220  INFO 35216 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 21:41:34.684  INFO 10560 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 10560 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:41:34.687  INFO 10560 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:41:35.144  WARN 10560 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:41:35.609  INFO 10560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:41:35.624  INFO 10560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:41:35.624  INFO 10560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:41:35.631  INFO 10560 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:41:35.707  INFO 10560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:41:35.707  INFO 10560 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 968 ms
+2023-12-10 21:41:35.727  INFO 10560 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:41:35.731  INFO 10560 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:41:35.731  INFO 10560 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:41:35.731  INFO 10560 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:41:35.731  INFO 10560 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:41:35.915  WARN 10560 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:41:35.983  WARN 10560 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:41:36.144  INFO 10560 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:41:36.388  INFO 10560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:41:36.390  INFO 10560 --- [main] com.example.Application                  : Started Application in 2.07 seconds (JVM running for 2.792)
+2023-12-10 21:41:36.393  INFO 10560 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:41:48.326  INFO 10560 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:41:48.326  INFO 10560 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:41:48.331  INFO 10560 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-10 21:41:48.416  INFO 10560 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 21:41:48.514  INFO 10560 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 21:42:08.540  INFO 10560 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:42:08.542  INFO 10560 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 21:42:08.549  INFO 10560 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 21:47:37.389  INFO 38024 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 38024 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:47:37.392  INFO 38024 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:47:37.942  WARN 38024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:47:38.463  INFO 38024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:47:38.479  INFO 38024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:47:38.480  INFO 38024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:47:38.488  INFO 38024 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:47:38.578  INFO 38024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:47:38.578  INFO 38024 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1140 ms
+2023-12-10 21:47:38.596  INFO 38024 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:47:38.600  INFO 38024 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:47:38.600  INFO 38024 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:47:38.600  INFO 38024 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:47:38.600  INFO 38024 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:47:38.803  WARN 38024 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:47:38.880  WARN 38024 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:47:39.048  INFO 38024 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:47:39.320  INFO 38024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:47:39.324  INFO 38024 --- [main] com.example.Application                  : Started Application in 2.352 seconds (JVM running for 3.313)
+2023-12-10 21:47:39.326  INFO 38024 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:47:39.862  INFO 38024 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:47:39.862  INFO 38024 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:47:39.875  INFO 38024 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2023-12-10 21:47:50.786  INFO 38024 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 21:47:50.897  INFO 38024 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 21:48:27.872  INFO 38024 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:48:27.873  INFO 38024 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 21:48:27.877  INFO 38024 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 21:57:47.708  INFO 42796 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 42796 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 21:57:47.712  INFO 42796 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 21:57:48.321  WARN 42796 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 21:57:48.822  INFO 42796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 21:57:48.840  INFO 42796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 21:57:48.840  INFO 42796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 21:57:48.848  INFO 42796 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 21:57:48.931  INFO 42796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 21:57:48.932  INFO 42796 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1177 ms
+2023-12-10 21:57:48.959  INFO 42796 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 21:57:48.962  INFO 42796 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 21:57:48.962  INFO 42796 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 21:57:48.962  INFO 42796 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 21:57:48.963  INFO 42796 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 21:57:49.167  WARN 42796 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:57:49.246  WARN 42796 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 21:57:49.402  INFO 42796 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:57:49.712  INFO 42796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 21:57:49.716  INFO 42796 --- [main] com.example.Application                  : Started Application in 2.384 seconds (JVM running for 2.966)
+2023-12-10 21:57:49.721  INFO 42796 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 21:57:50.064  INFO 42796 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 21:57:50.064  INFO 42796 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 21:57:50.068  INFO 42796 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-12-10 21:58:08.048  INFO 42796 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 21:58:08.143  INFO 42796 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 21:58:25.505  INFO 42796 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 21:58:25.510  INFO 42796 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 21:58:25.516  INFO 42796 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 23:46:44.490  INFO 25508 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 25508 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 23:46:44.494  INFO 25508 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 23:46:45.276  WARN 25508 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 23:46:46.432  INFO 25508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 23:46:46.469  INFO 25508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 23:46:46.470  INFO 25508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 23:46:46.489  INFO 25508 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 23:46:46.816  INFO 25508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 23:46:46.817  INFO 25508 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2258 ms
+2023-12-10 23:46:46.891  INFO 25508 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 23:46:46.902  INFO 25508 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 23:46:46.904  INFO 25508 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 23:46:46.905  INFO 25508 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 23:46:46.905  INFO 25508 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 23:46:47.783  WARN 25508 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 23:46:48.140  WARN 25508 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 23:46:48.907  INFO 25508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 23:46:49.912  INFO 25508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 23:46:49.921  INFO 25508 --- [main] com.example.Application                  : Started Application in 5.983 seconds (JVM running for 7.563)
+2023-12-10 23:46:49.932  INFO 25508 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 23:46:51.696  INFO 25508 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 23:46:51.696  INFO 25508 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 23:46:51.708  INFO 25508 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2023-12-10 23:47:06.039  INFO 25508 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 23:47:06.249  INFO 25508 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 23:52:56.889  INFO 25508 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 23:52:56.892  INFO 25508 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 23:52:56.901  INFO 25508 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 23:56:23.331  INFO 25932 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 25932 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 23:56:23.336  INFO 25932 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 23:56:24.150  WARN 25932 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 23:56:25.050  INFO 25932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 23:56:25.077  INFO 25932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 23:56:25.078  INFO 25932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 23:56:25.090  INFO 25932 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 23:56:25.272  INFO 25932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 23:56:25.273  INFO 25932 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1869 ms
+2023-12-10 23:56:25.307  INFO 25932 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 23:56:25.312  INFO 25932 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 23:56:25.312  INFO 25932 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 23:56:25.312  INFO 25932 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 23:56:25.313  INFO 25932 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 23:56:25.637  WARN 25932 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 23:56:25.775  WARN 25932 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 23:56:26.050  INFO 25932 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 23:56:26.487  INFO 25932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 23:56:26.490  INFO 25932 --- [main] com.example.Application                  : Started Application in 3.671 seconds (JVM running for 4.799)
+2023-12-10 23:56:26.495  INFO 25932 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 23:56:41.674  INFO 25932 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 23:56:41.675  INFO 25932 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 23:56:41.686  INFO 25932 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2023-12-10 23:56:41.894  INFO 25932 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 23:56:42.086  INFO 25932 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 23:58:30.368  INFO 25932 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-10 23:58:30.370  INFO 25932 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 23:58:30.378  INFO 25932 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-10 23:59:28.428  INFO 37728 --- [main] com.example.Application                  : Starting Application on DESKTOP-L0GSQQO with PID 37728 (D:\Github\Student-Selection-System-demo\target\classes started by Athena in D:\Github\Student-Selection-System-demo)
+2023-12-10 23:59:28.431  INFO 37728 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-10 23:59:29.211  WARN 37728 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-10 23:59:30.207  INFO 37728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-12-10 23:59:30.233  INFO 37728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10 23:59:30.233  INFO 37728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-10 23:59:30.246  INFO 37728 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Athena\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Programs\Python\Python312\Scripts\;D:\Programs\Python\Python312\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin;C:\OpenCV\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_64\bin;C:\Qt\Qt5.12.9\Tools\mingw730_64\bin;C:\Download\OpenCV-MinGW-Build-OpenCV-4.0.1-x64\x64\mingw\bin;C:\Qt\Qt5.12.9\Tools\mingw730_32\bin;C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin;C:\opencv\opencvbuild\bin;D:\MySQL\bin;D:\mingw64\bin;C:\Program Files (x86)\dotnet\;D:\Git\Git\cmd;D:\Programs\MATLAB\R2022b\runtime\win64;D:\Programs\MATLAB\R2022b\bin;D:\Programs\MySQL\MySQL Shell 8.0\bin\;C:\Users\Athena\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\Athena\AppData\Local\GitHubDesktop\bin;D:\VSCode\Microsoft VS Code\bin;D:\mingw64\bin;;.]
+2023-12-10 23:59:30.373  INFO 37728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10 23:59:30.374  INFO 37728 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1886 ms
+2023-12-10 23:59:30.406  INFO 37728 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-10 23:59:30.411  INFO 37728 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-10 23:59:30.412  INFO 37728 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-10 23:59:30.412  INFO 37728 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-10 23:59:30.412  INFO 37728 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-10 23:59:30.719  WARN 37728 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=admin_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 23:59:30.831  WARN 37728 --- [main] t.m.m.m.resolve.DefaultEntityResolve     : 通用 Mapper 警告信息: <[EntityColumn{table=teacher_info, property='level', column='level', javaType=int, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2023-12-10 23:59:31.145  INFO 37728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-10 23:59:31.640  INFO 37728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-12-10 23:59:31.643  INFO 37728 --- [main] com.example.Application                  : Started Application in 3.705 seconds (JVM running for 4.762)
+2023-12-10 23:59:31.647  INFO 37728 --- [main] com.example.common.config.OpenBrowser    : 项目启动成功……
+2023-12-10 23:59:32.529  INFO 37728 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-10 23:59:32.530  INFO 37728 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-10 23:59:32.542  INFO 37728 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms

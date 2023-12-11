@@ -204,7 +204,7 @@
         methods: {
             loadData(){//一个加载数据的方法，请求后台获取数据
                 axios.get("/getUser").then(res=>{
-                    if(res.data.code==="0"){//0为状态码，表示请求成功
+                    if(res.data.code==='0'){//0为状态码，表示请求成功
                         this.entity=res.data.data;
 
                     }else{
@@ -216,7 +216,7 @@
             },
             update(){
                 axios.put("/adminInfo",this.entity).then(res=>{
-                    if(res.data.code==="0"){
+                    if(res.data.code==='0'){
                         msg("success","保存成功");
                         this.loadData();
                     }else{

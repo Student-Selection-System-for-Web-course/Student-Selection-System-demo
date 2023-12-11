@@ -53,7 +53,7 @@
                     </div>
 
                     <div style="text-align: center">
-                        <a href="javascript:void(0)" @click="login" class="btn btn-primary" >登录</a>
+                        <a href="javascript:void(0)" class="btn-block btn-primary" @click="login" >登录</a>
                     </div>
                     <hr/>
                     <div style="text-align: center">
@@ -93,7 +93,7 @@
                                 window.location = "/end/page/accountAdminInfo.html";
                             }
                             if (user.level === 2) {
-                                window.location = "/end/page/accountTeacher.html";
+                                window.location = "/end/page/accountTeacherInfo.html";
                             }
                             if (user.level === 3) {
                                 window.location = "/end/page/accountStudentInfo.html";
