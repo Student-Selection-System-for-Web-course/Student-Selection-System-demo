@@ -29,21 +29,21 @@ function checkValid(entity) {
 
 function personalPage() {
     let user = JSON.parse(localStorage.getItem("user"));
-    if (user && user.level && user.level === 1) {
-        window.location = '/end/page/accountAdminInfo.html';
-    }
-    if (user && user.level && user.level === 2) {
-        window.location = '/end/page/accountTeacherInfo.html';
-    }
-    if (user && user.level && user.level === 3) {
-        window.location = '/end/page/accountStudentInfo.html';
-    }
+	if (user && user.level && user.level === 1) {
+		window.location = '/end/page/accountAdminInfo.html';
+	}
+	if (user && user.level && user.level === 2) {
+		window.location = '/end/page/accountTeacherInfo.html';
+	}
+	if (user && user.level && user.level === 3) {
+		window.location = '/end/page/accountStudentInfo.html';
+	}
 
 }
 
 function logout() {
     axios.get("/logout").then(res => {
-        if (res.data.code === "0") {
+        if (res.data.code === '0') {
             window.location = "/end/page/login.html";
         } else {
             msg("error", res.data.msg);
@@ -51,13 +51,15 @@ function logout() {
     })
 }
 
+
 /**
- * 弹出式提示框，默认1.2秒自动消失
- * @param message 提示信息
- * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
- * @param time 消失时间
- */
-let prompt = function (message, style, time) {
+* 弹出式提示框，默认1.2秒自动消失
+* @param message 提示信息
+* @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+* @param time 消失时间
+*/
+let prompt = function (message, style, time)
+{
     style = (style === undefined) ? 'alert-success' : style;
     time = (time === undefined) ? 1200 : time;
     $('<div>')
@@ -70,21 +72,25 @@ let prompt = function (message, style, time) {
 };
 
 // 成功提示
-let success_prompt = function (message, time) {
+let success_prompt = function(message, time)
+{
     prompt(message, 'alert-success', time);
 };
 
 // 失败提示
-let fail_prompt = function (message, time) {
+let fail_prompt = function(message, time)
+{
     prompt(message, 'alert-danger', time);
 };
 
 // 提醒
-let warning_prompt = function (message, time) {
+let warning_prompt = function(message, time)
+{
     prompt(message, 'alert-warning', time);
 };
 
 // 信息提示
-let info_prompt = function (message, time) {
+let info_prompt = function(message, time)
+{
     prompt(message, 'alert-info', time);
 };

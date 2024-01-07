@@ -12,7 +12,6 @@
         [v-cloak] {
             display: none;
         }
-
         .table th, .table td {
             text-align: center !important;
             vertical-align: middle !important;
@@ -21,9 +20,9 @@
 </head>
 <body style="background:url('../img/bg.jpg') no-repeat; background-size: cover;">
 <div id="app" class="container" v-cloak>
-    <div class="row text-center " style="padding-top:120px;">
+    <div class="row text-center " style="padding-top:180px;">
         <div class="col-md-12">
-            <h2 style="color: white">欢迎登录学生选课管理系统</h2>
+           <h2 style="color: white">欢迎登录学生选课管理系统</h2>
         </div>
     </div>
     <div class="row ">
@@ -48,18 +47,22 @@
                         <select class="form-control" v-model="user.level">
                             <option value="" selected="">请选择</option>
                             <option value="1">管理员</option>
-<!--                            <option value="2">教师</option>-->
+                            <option value="2">教师</option>
                             <option value="3">学生</option>
                         </select>
                     </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-check-square"></i></span>
+                        <input type="text" class="form-control" style="width: 150px; margin-right: 5px" v-model="user.verCode" placeholder="请输入图形验证码"/>
+                        <img :src="captchaUrl" @click="clickImg()" width="135px" height="33px" />
+                    </div>
 
                     <div style="text-align: center">
-                        <a href="javascript:void(0)" @click="login" class="btn btn-primary" >登录</a>
+                        <a href="javascript:void(0)" class="btn btn-block btn-primary" @click="login">登录</a>
                     </div>
                     <hr/>
                     <div style="text-align: center">
-                        <span style="color: white">未注册 ?</span> <a href="register.html"
-                                                                      style="color: yellow">点击这里 </a>
+                        <span style="color: white">未注册 ?</span> <a href="register.html" style="color: yellow">点击这里 </a>
                     </div>
 
                 </form>
@@ -76,8 +79,8 @@
     new Vue({
         el: "#app",
         data: {
-            user: {}
-
+            user: {},
+            captchaUrl: "/captcha"
         },
         created: function () {
 
@@ -85,26 +88,28 @@
         methods: {
             login() {
                 axios.post("/login", this.user).then(res => {
-
                     if (res.data.code === '0') {
                         let user = res.data.data;
                         localStorage.setItem('user', JSON.stringify(user));
-                        if (user && user.level) {
-                            if (user.level === 1) {
-                                window.location = "/end/page/accountAdminInfo.html";
-                            }
-                            if (user.level === 2) {
-                                window.location = "/end/page/accountTeacher.html";
-                            }
-                            if (user.level === 3) {
-                                window.location = "/end/page/accountStudentInfo.html";
-                            }
+                        if (user && user.level && 1 === user.level) {
+                            window.location = "/end/page/accountAdminInfo.html";
+                        }
+                        if (user && user.level && 2 === user.level) {
+                            window.location = "/end/page/accountTeacherInfo.html";
+                        }
+                        if (user && user.level && 3 === user.level) {
+                            window.location = "/end/page/accountStudentInfo.html";
                         }
                     } else {
                         alert(res.data.msg);
+                        this.clickImg();
                     }
                 })
-            }
+            },
+            clickImg() {
+                this.captchaUrl='/captcha?' + Math.random();
+                this.user.verCode = "";
+            },
         }
     });
 </script>

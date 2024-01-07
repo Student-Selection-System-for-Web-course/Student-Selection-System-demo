@@ -16,10 +16,9 @@ public class XueyuanInfoService {
     private XueyuanInfoDao xueyuanInfoDao;
 
     public void add(XueyuanInfo xueyuanInfo) {
-        //判断学院是否重复
         XueyuanInfo info = xueyuanInfoDao.findByName(xueyuanInfo.getName());
-        if(ObjectUtil.isNotEmpty(info)){
-            throw new CustomException("-1","该学院已存在");
+        if (ObjectUtil.isNotEmpty(info)) {
+            throw new CustomException("-1", "该学院名称已存在");
         }
         xueyuanInfoDao.insertSelective(xueyuanInfo);
     }

@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml"
       xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="pragma" content="no-cache"/>
-    <meta http-equiv="content-type" content="no-cache, must-revalidate"/>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="content-type" content="no-cache, must-revalidate" />
     <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT"/>
     <title>个人信息</title>
 
@@ -18,7 +19,6 @@
         [v-cloak] {
             display: none;
         }
-
         .table th, .table td {
             text-align: center !important;
             vertical-align: middle !important;
@@ -32,8 +32,7 @@
             <nav class="navbar navbar-default top-navbar" role="navigation">
                 <div class="row">
                     <div class="col-md-2">
-                        <a class="navbar-brand" style="width:100%; background-color: darkslateblue"><strong
-                                style="font-size: 20px;">学生选课管理系统</strong></a>
+                        <a class="navbar-brand" style="width:100%; background-color: darkslateblue"><strong style="font-size: 20px;">学生选课管理系统</strong></a>
                     </div>
                     <div class="col-md-10">
 
@@ -44,12 +43,10 @@
                                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-user">
-                                    <li><a href="javascript:void(0)" @click="personalPage"><i
-                                            class="fa fa-user fa-fw"></i> 个人信息</a>
+                                    <li><a href="javascript:void(0)" @click="personalPage"><i class="fa fa-user fa-fw"></i> 个人信息</a>
                                     </li>
                                     <li class="divider"></li>
-                                    <li><a href="javascript:void(0)" @click="logout"><i
-                                            class="fa fa-sign-out fa-fw"></i> 退出</a>
+                                    <li><a href="javascript:void(0)" @click="logout"><i class="fa fa-sign-out fa-fw"></i> 退出</a>
                                     </li>
                                 </ul>
                             </li>
@@ -68,56 +65,42 @@
                         <li>
                             <a href="#"><i class="fa fa-sitemap"></i> 信息管理<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse in">
-                                <li v-if="user.level === 1">
-                                    <a href="adminInfo.html"><i class="fa fa-table sub-icon-mg"
-                                                                aria-hidden="true"></i><span
-                                            class="mini-sub-pro">管理员信息</span></a>
-                                </li>
-<!--                                <li v-if="user.level === 1">-->
-<!--                                    <a href="teacherInfo.html"><i class="fa fa-table sub-icon-mg"-->
-<!--                                                                  aria-hidden="true"></i><span-->
-<!--                                            class="mini-sub-pro">教师信息</span></a>-->
-<!--                                </li>-->
-                                <li v-if="user.level === 1">
-                                    <a href="studentInfo.html"><i class="fa fa-table sub-icon-mg"
-                                                                  aria-hidden="true"></i><span
-                                            class="mini-sub-pro">学生信息</span></a>
-                                </li>
-                                <li v-if="user.level === 1">
-                                    <a href="xueyuanInfo.html"><i class="fa fa-table sub-icon-mg"
-                                                                  aria-hidden="true"></i><span
-                                            class="mini-sub-pro">学院信息</span></a>
-                                </li>
-                                <li v-if="user.level === 1">
-                                    <a href="zhuanyeInfo.html"><i class="fa fa-table sub-icon-mg"
-                                                                  aria-hidden="true"></i><span
-                                            class="mini-sub-pro">专业信息</span></a>
-                                </li>
-                                <li>
-                                    <a href="classInfo.html"><i class="fa fa-table sub-icon-mg"
-                                                                aria-hidden="true"></i><span
-                                            class="mini-sub-pro">课程信息</span></a>
-                                </li>
+								<li v-if="user.level === 1">
+									<a href="adminInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">管理员信息</span></a>
+								</li>
+								<li v-if="user.level === 1">
+									<a href="teacherInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">教师信息</span></a>
+								</li>
+								<li v-if="user.level === 1">
+									<a href="studentInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">学生信息</span></a>
+								</li>
+								<li v-if="user.level === 1">
+									<a href="xueyuanInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">学院信息</span></a>
+								</li>
+								<li v-if="user.level === 1">
+									<a href="zhuanyeInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">专业信息</span></a>
+								</li>
+								<li>
+									<a href="classInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">课程信息</span></a>
+								</li>
 
-                                <li>
-                                    <a href="xuankeInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span
-                                            class="mini-sub-pro">选课信息</span></a>
-                                </li>
+								<li>
+									<a href="xuankeInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">选课信息</span></a>
+								</li>
 
 
                                 <li>
-                                    <a href="javascript:void(0)" @click="personalPage" class="active-menu"><i
-                                            class="fa fa-user"></i>个人信息</a>
+                                    <a href="javascript:void(0)" @click="personalPage" class="active-menu"><i class="fa fa-user"></i>个人信息</a>
                                 </li>
 
                             </ul>
                         </li>
 
-<!--                        <li>-->
-<!--                            <a href="updatePassword.html"><i class="fa fa-unlock-alt"></i>修改密码</a>-->
-<!--                        </li>-->
                         <li>
-                            <a href="javascript:void(0)" @click="logout()"><i class="fa fa-power-off"></i>退出登录</a>
+                            <a href="updatePassword.html"><i class="fa fa-unlock-alt"></i>修改密码</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" @click="logout"><i class="fa fa-power-off"></i>退出登录</a>
                         </li>
                     </ul>
                 </div>
@@ -138,8 +121,7 @@
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label">姓名</label>
                                             <div class="col-sm-7">
-                                                <input type="text" class="form-control" v-model="entity.xingming"
-                                                       placeholder="请输入姓名">
+                                                <input type="text" class="form-control" v-model="entity.name" placeholder="请输入姓名">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -156,15 +138,19 @@
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label">年龄</label>
                                             <div class="col-sm-7">
-                                                <input type="text" class="form-control" v-model="entity.age"
-                                                       placeholder="请输入年龄">
+                                                <input type="text" class="form-control" v-model="entity.age" placeholder="请输入年龄">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">学院</label>
+                                            <label class="col-sm-3 control-label">学号</label>
                                             <div class="col-sm-7">
-                                                <input type="text" class="form-control" v-model="entity.sdept"
-                                                       placeholder="请输入学院">
+                                                <input type="text" class="form-control" v-model="entity.code" placeholder="请输入学号">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">总学分</label>
+                                            <div class="col-sm-7">
+                                                <input disabled type="text" class="form-control" v-model="entity.score">
                                             </div>
                                         </div>
                                     </form>
@@ -200,7 +186,6 @@
             center: true
         })
     }
-
     new Vue({
         el: '#wrapper',
         data: {
@@ -221,43 +206,24 @@
         methods: {
             loadData() {
                 axios.get("/getUser").then(res => {
-                    if (res.data.code === "0") {
+                    if (res.data.code === '0') {
                         this.entity = res.data.data;
-                        switch (this.entity.sdept){
-                            case(1):
-                                this.entity.sdept = "信息科学与工程学院";
-                            case(2):
-                                this.entity.sdept = "数学院";
-                        }
                     } else {
                         msg("error", res.data.msg);
                     }
                 })
             },
             update() {
-                switch (this.entity.sdept){
-                    case ("信息科学与工程学院"):
-                        this.entity.sdept = 1;
-                    case ("数学院"):
-                        this.entity.sdept = 2;
-                }
                 axios.put("/studentInfo", this.entity).then(res => {
-                    if (res.data.code === "0") {
+                    if (res.data.code === '0') {
                         msg("success", "保存成功");
-                        this.loadTable();
                     } else {
                         msg("error", res.data.msg);
                     }
                 })
             },
             logout() {
-                axios.get("/logout").then(res => {
-                    if (res.data.code === "0") {
-                        window.location = "/end/page/login.html";
-                    } else {
-                        msg("error", res.data.msg);
-                    }
-                })
+                logout();
             }
         }
     })

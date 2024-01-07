@@ -68,9 +68,9 @@
 								<li v-if="user.level === 1">
 									<a href="adminInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">管理员信息</span></a>
 								</li>
-<!--								<li>-->
-<!--									<a href="teacherInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">教师信息</span></a>-->
-<!--								</li>-->
+								<li v-if="user.level === 1">
+									<a href="teacherInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">教师信息</span></a>
+								</li>
 								<li v-if="user.level === 1">
 									<a href="studentInfo.html"><i class="fa fa-table sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">学生信息</span></a>
 								</li>
@@ -96,9 +96,9 @@
                             </ul>
                         </li>
 
-<!--                        <li>-->
-<!--                            <a href="updatePassword.html"><i class="fa fa-unlock-alt"></i>修改密码</a>-->
-<!--                        </li>-->
+                        <li>
+                            <a href="updatePassword.html"><i class="fa fa-unlock-alt"></i>修改密码</a>
+                        </li>
                         <li>
                             <a href="javascript:void(0)" @click="logout"><i class="fa fa-power-off"></i>退出登录</a>
                         </li>
@@ -172,24 +172,20 @@
                         <div class="form-group">
                             <label class="col-sm-3 control-label">专业名称</label>
                             <div class="col-sm-7 form-inline">
-                                <input type="text" class="form-control" v-model="entity.name"
-                                       placeholder="请输入专业名称"
-                                       style="width:100%">
+                                <input type="text" class="form-control" v-model="entity.name" placeholder="请输入专业名称" style="width: 100%">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">系名</label>
                             <div class="col-sm-7 form-inline">
-                                <input type="text" class="form-control" v-model="entity.department"
-                                       placeholder="请输入系名"
-                                       style="width:100%">
+                                <input type="text" class="form-control" v-model="entity.department" placeholder="请输入系名" style="width: 100%">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">所属学院</label>
                             <div class="col-sm-7 form-inline">
-                                <select class="form-control" v-model="entity.xueyuanId" style="width:100%">
-                                    <option v-for="item in xueyuanObjs" :value="item.id">{{item.name}}</option>
+                                <select class="form-control" v-model="entity.xueyuanId" style="width: 100%">
+                                    <option v-for="item in xueyuanObjs" :value="item.id" >{{item.name}}</option>
                                 </select>
                             </div>
                         </div>
@@ -231,7 +227,7 @@
             entity: {},
             xueyuanObjs: [],
             tableData: [],
-            search: null
+            search: null,
         },
         created: function () {
             const menuHeight = document.getElementById("main-menu").getElementsByTagName('li').length * 53;
@@ -244,82 +240,35 @@
 
         },
         methods: {
-            loadTable(){
+
+            loadTable() {
                 let url = "/zhuanyeInfo";
-                if(this.search){
-                    //模糊查询
+                if (this.search) {
+                    // 根据输入的内容进行模糊查询
                     url = url + "/" + this.search;
                 }
-                //查询数据
-                axios.get(url).then(res=>{
-                    if(res.data.code === "0"){
+                axios.get(url).then(res => {
+                    if (res.data.code === '0') {
                         this.tableData = res.data.data;
-                    }else{
-                        msg("error",res.data.msg);
+                    } else {
+                        msg("error", res.data.msg);
                     }
                 })
             },
 
-            add(){
+            add() {
                 this.entity = {};
-                $('#mod').modal('show');
+                $("#mod").modal("show");
             },
 
-            init(obj){
-              this.entity = JSON.parse(JSON.stringify(obj));
-                $('#mod').modal('show');
-            },
-
-            del(id){
-                let _this = this;
-                this.$confirm('确认删除？', '系统提示', {
-                    confirmButtonText: '确定',
-                    cancelButtonText: '取消',
-                    cancelButtonClass: 'btn-custom-cancel',
-                    type: 'warning'
-                }).then(function () {
-                    //删除
-                    axios.delete("/zhuanyeInfo/" + id).then(res => {
-                        if (res.data.code === "0") {
-                            msg("success", "删除成功");
-                            _this.loadTable();
-                        } else {
-                            msg("error", res.data.msg);
-                        }
-                    })
-                }).catch(function () {
-                    console.log("取消成功！");
-                })
-            },
-
-            update(){
-                if(this.entity.id){
-                    //编辑
-                    axios.put("/zhuanyeInfo",this.entity).then(res=>{
-                        if(res.data.code === "0"){
-                            msg("success","更新成功");
-                            $('#mod').modal('hide');
-                            this.loadTable();
-                        }else{
-                            msg("error",res.data.msg);
-                        }
-                    })
-                }else{
-                    axios.post("/zhuanyeInfo",this.entity).then(res=>{
-                        if(res.data.code === "0"){
-                            msg("success","新增成功");
-                            $('#mod').modal('hide');
-                            this.loadTable();
-                        }else{
-                            msg("error",res.data.msg);
-                        }
-                    })
-                }
+            init(obj) {
+                this.entity = JSON.parse(JSON.stringify(obj));
+                $("#mod").modal("show");
             },
 
             loadXueyuan() {
                 axios.get("/xueyuanInfo").then(res => {
-                    if (res.data.code === "0") {
+                    if (res.data.code === '0') {
                         this.xueyuanObjs = res.data.data;
                     } else {
                         msg("error", res.data.msg);
@@ -327,14 +276,56 @@
                 })
             },
 
+            update() {
+                if (this.entity.id) {
+                    // 编辑
+                    axios.put("/zhuanyeInfo", this.entity).then(res => {
+                        if (res.data.code === '0') {
+                            msg("success", "更新成功");
+                            $("#mod").modal("hide");
+                            this.loadTable();
+                        } else {
+                            msg("error", res.data.msg);
+                        }
+                    })
+                } else {
+                    // 新增
+                    axios.post("/zhuanyeInfo", this.entity).then(res => {
+                        if (res.data.code === '0') {
+                            msg("success", "新增成功");
+                            $("#mod").modal("hide");
+                            this.loadTable();
+                        } else {
+                            msg("error", res.data.msg);
+                        }
+                    })
+                }
+            },
+
+            del(id) {
+                let that = this;
+                this.$confirm('确认删除？', '系统提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    cancelButtonClass: 'btn-custom-cancel',
+                    type: 'warning'
+                }).then(function(){
+                    // 删除
+                    axios.delete("/zhuanyeInfo/" + id).then(res => {
+                        if (res.data.code === '0') {
+                            msg("success", "删除成功");
+                            that.loadTable();
+                        } else {
+                            msg("error", res.data.msg);
+                        }
+                    })
+                }).catch(function() {
+                    console.log("取消成功！");
+                });
+            },
+
             logout() {
-                axios.get("/logout").then(res => {
-                    if (res.data.code === "0") {
-                        window.location = "/end/page/login.html";
-                    } else {
-                        msg("error", res.data.msg);
-                    }
-                })
+                logout();
             }
         }
     })

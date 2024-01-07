@@ -8,8 +8,10 @@ import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
+
 @Repository
 public interface XueyuanInfoDao extends Mapper<XueyuanInfo> {
+
     @Select("select * from xueyuan_info where name = #{name}")
     XueyuanInfo findByName(@Param("name") String name);
 

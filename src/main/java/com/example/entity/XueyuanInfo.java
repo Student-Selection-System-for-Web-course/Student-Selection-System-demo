@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Table(name = "xueyuan_info")
 public class XueyuanInfo {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
