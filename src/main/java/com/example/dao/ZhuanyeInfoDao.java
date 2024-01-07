@@ -8,13 +8,13 @@ import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
+
 @Repository
 public interface ZhuanyeInfoDao extends Mapper<ZhuanyeInfo> {
-
 
     @Select("select * from zhuanye_info where name = #{name}")
     ZhuanyeInfo findByName(@Param("name") String name);
 
-    @Select(("select * from zhuanye_info where name like concat('%',#{search},'%')"))
+    @Select("select a.*, b.name AS xueyuanName from zhuanye_info AS a LEFT JOIN xueyuan_info AS b ON a.xueyuanId = b.id where a.name like concat('%', #{search}, '%')")
     List<ZhuanyeInfo> findBySearch(@Param("search") String search);
 }

@@ -5,67 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>注册页面</title>
 
-    <link href="../css/bootstrap.css" rel="stylesheet"/>
-    <link href="../css/font-awesome.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 
     <style>
-        [v-cloak] {
-            display: none;
+        body {
+            background: url('../img/image.jpg') no-repeat;
+            background-size: cover;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-        .table th, .table td {
-            text-align: center !important;
-            vertical-align: middle !important;
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .panel-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form__title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group-addon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            color: #aaa;
+        }
+
+        .input {
+            width: calc(100% - 30px);
+            padding: 15px;
+            padding-left: 45px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            border-radius: 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            outline: none;
+            transition: border-bottom-color 0.3s;
+        }
+
+        .input:focus {
+            border-bottom-color: #007BFF;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .link {
+            color: #007BFF;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
-<body style="background-color: #E2E2E2;">
+<body>
 <div id="app" class="container" v-cloak>
-    <div class="row text-center " style="padding-top:100px;">
-        <div class="col-md-12">
-            <h2>欢迎注册</h2>
-        </div>
-    </div>
-    <div class="row ">
-
-        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-
-            <div class="panel-body">
-                <form role="form">
-                    <hr/>
-                    <br/>
-                    <div class="form-group input-group">
-                        <span class="input-group-addon"><i class="fa fa-tag"></i></span>
-                        <input type="text" class="form-control" v-model="user.name" placeholder="学号"/>
-                    </div>
-                    <div class="form-group input-group">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="password" class="form-control" v-model="user.password"  placeholder="密码"/>
-                    </div>
-                    <h5>请选择角色</h5>
-                    <div class="form-group input-group">
-                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                        <select class="form-control" v-model="user.level">
-                            <option value="" selected="">请选择</option>
-<!--                            <option value="2">教师</option>-->
-                            <option value="3">学生</option>
-                        </select>
-                    </div>
-                    <div style="text-align: center" @click="register">
-                        <a href="javascript:void(0)" class="btn btn-block btn-primary">注册</a>
-                    </div>
-                    <hr/>
-                    <div style="text-align: center">
-                        <span style="color: black">已注册？</span> <a href="login.html" style="color: dodgerblue">点击这里</a>
-                    </div>
-                </form>
+    <!-- Sign Up -->
+    <div class="panel-body">
+        <form role="form">
+            <h2 class="form__title">欢迎注册</h2>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-tag"></i></span>
+                <input type="text" class="input" v-model="user.name" placeholder="用户名"/>
             </div>
-
-        </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                <input type="password" class="input" v-model="user.password" placeholder="密码"/>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <select class="input" v-model="user.level" :value="null" placeholder="选择角色">
+                    <option value="" selected disabled>请选择角色</option>
+                    <option value="2">教师</option>
+                    <option value="3">学生</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" @click="register">注册</button>
+            </div>
+            <hr/>
+            <div class="text-center">
+                <span>已注册？</span> <a href="login.html" class="link">点击这里</a>
+            </div>
+        </form>
     </div>
 </div>
 
-<script src="../js/vue2.6.11/vue.min.js"></script>
-<script src="../js/vue2.6.11/axios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script>
     new Vue({
@@ -73,13 +150,11 @@
         data: {
             user: {},
         },
-        created: function () {
-        },
         methods: {
-            register(){
+            register() {
                 axios.post("/register", this.user).then(res => {
                     if (res.data.code === '0') {
-                        alert(res.data.msg);
+                        window.location = "/end/page/login.html";
                     } else {
                         alert(res.data.msg);
                     }

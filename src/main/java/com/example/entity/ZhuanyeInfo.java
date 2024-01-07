@@ -26,14 +26,6 @@ public class ZhuanyeInfo {
         this.id = id;
     }
 
-    public String getXueyuanName() {
-        return xueyuanName;
-    }
-
-    public void setXueyuanName(String xueyuanName) {
-        this.xueyuanName = xueyuanName;
-    }
-
     public String getName() {
         return name;
     }
@@ -56,5 +48,13 @@ public class ZhuanyeInfo {
 
     public void setXueyuanId(Long xueyuanId) {
         this.xueyuanId = xueyuanId;
+    }
+
+    public String getXueyuanName() {
+        return xueyuanName;
+    }
+
+    public void setXueyuanName(String xueyuanName) {
+        this.xueyuanName = xueyuanName;
     }
 }
