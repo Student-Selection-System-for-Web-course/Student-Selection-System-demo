@@ -1,78 +1,89 @@
 package com.example.entity;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 public class Account {
-	//注解为Id
-	@Id
-	//@GeneratedValue注解存在的意义主要就是为一个实体生成一个唯一标识的主键
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
 
-	//@Column注解用来标识实体类中属性与数据表中字段的对应关系。name属性定义了被标注字段在数据库表中所对应字段的名称；
-	@Column(name="name")
-	private String name;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	@Column(name="password")
-	private String password;
+    @Column(name = "name")
+    private String name;
+    @Column(name = "password")
+    private String password;
+    @Column(name = "sex")
+    private String sex;
+    @Column(name = "age")
+    private String age;
+    @Column(name = "level")
+    private Integer level;
+    @Transient
+    private String newPassword;
+    @Transient
+    private String verCode;
 
-	@Column(name="sex")
-	private String sex;
+    public Long getId() {
+        return id;
+    }
 
-	@Column(name="age")
-	private String age;
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	@Column(name="level")
-	private int level;
+    public String getName() {
+        return name;
+    }
 
-	public Long getId() {
-		return id;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getSex() {
+        return sex;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getAge() {
+        return age;
+    }
 
-	public String getSex() {
-		return sex;
-	}
+    public void setAge(String age) {
+        this.age = age;
+    }
 
-	public void setSex(String sex) {
-		this.sex = sex;
-	}
+    public Integer getLevel() {
+        return level;
+    }
 
-	public String getAge() {
-		return age;
-	}
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
 
-	public void setAge(String age) {
-		this.age = age;
-	}
+    public String getNewPassword() {
+        return newPassword;
+    }
 
-	public int getLevel() {
-		return level;
-	}
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
+    }
 
-	public void setLevel(int level) {
-		this.level = level;
-	}
+    public String getVerCode() {
+        return verCode;
+    }
+
+    public void setVerCode(String verCode) {
+        this.verCode = verCode;
+    }
 }
